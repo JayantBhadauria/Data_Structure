@@ -1,14 +1,14 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void push_ele(stack<int>&s,int tem){
+void push_element(stack<int>&s,int tem){
     if(s.empty()){
         s.push(tem);
         return;
     }
     int k=s.top();
     s.pop();
-    push_ele(s,tem);
+    push_element(s,tem);
     s.push(k); 
 }
 
@@ -19,7 +19,7 @@ void reverseStack(stack<int>&s){
     int tem=s.top();
     s.pop();
     reverseStack(s);
-    push_ele(s,tem);
+    push_element(s,tem);
 }
 
 int main(){
