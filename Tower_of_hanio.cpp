@@ -15,4 +15,5 @@ int main(){
     cout<<"How many number of plates : ";
     cin>>num;
     toh(num,0,1,2);
+    return 0;
 }
