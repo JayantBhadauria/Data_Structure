@@ -29,5 +29,5 @@ int main(){
         tem=tem->next;
     }
     cout<<tem->data;
-    return 0;
+    return 1;
 }
